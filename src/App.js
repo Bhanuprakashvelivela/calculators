@@ -14,7 +14,7 @@ import InductanceConversion from "./calculators/InductanceConversion";
 import LengthConversion from "./calculators/LengthConversion";
 import NumberConversion from "./calculators/NumberConversion";
 import PressureConversion from "./calculators/PressureConversion";
-import TemperatureConversion from "./calculators/TemperatureConversion";
+import TemperatureConversionCalculator from "./calculators/TemperatureConversionCalculator";
 import VolumeConversion from "./calculators/VolumeConversion";
 import WeightConversion from "./calculators/WeightConversion";
 import WireSizeConversion from "./calculators/WireSizeConversion";
@@ -67,7 +67,7 @@ function App() {
           <Route path="/length-conversion" element={<LengthConversion />} />
           <Route path="/number-conversion" element={<NumberConversion />} />
           <Route path="/pressure-conversion" element={<PressureConversion />} />
-          <Route path="/temperature-conversion" element={<TemperatureConversion />} />
+          <Route path="/temperature-conversion-calculator" element={<TemperatureConversionCalculator />} />
           <Route path="/volume-conversion" element={<VolumeConversion />} />
           <Route path="/weight-conversion" element={<WeightConversion />} />
           <Route path="/wire-size-conversion" element={<WireSizeConversion />} />
