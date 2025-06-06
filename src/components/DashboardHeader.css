@@ -1,0 +1,66 @@
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 24px 0 8px 0;
+    background: #f5f7fa;
+    margin-bottom: 18px;
+}
+
+.dashboard-tabs {
+    display: flex;
+    gap: 36px;
+}
+
+.dashboard-tab {
+    cursor: pointer;
+    color: #191f28;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+    .dashboard-tab.active {
+        color: #f00;
+        font-weight: bold;
+        border-bottom: 3px solid #f00;
+    }
+
+.dashboard-search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 26px;
+    border: 1px solid #e0e0e0;
+    padding-left: 16px;
+}
+
+    .dashboard-search input {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: transparent;
+        padding: 10px 8px;
+        width: 180px;
+        color: #444;
+    }
+
+    .dashboard-search button {
+        background: #f00;
+        color: #fff;
+        border: none;
+        border-radius: 26px;
+        padding: 10px 24px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: background 0.15s;
+    }
+
+        .dashboard-search button:hover {
+            background: #c00;
+        }
