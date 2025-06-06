@@ -28,3 +28,8 @@ function VoltageDividerCalculator() {
   );
 }
 export default VoltageDividerCalculator;
+export const calculators = [
+  { title: "Ohm's Law", description: "Test", to: "/ohms-law", icon: "🧮" },
+  { title: "Voltage Divider Calculator", description: "Test", to: "/voltage-divider", icon: "🧮" }
+  // Only ONE for now, keep it super simple!
+];

@@ -1,6 +1,9 @@
+import React from 'react';
+import { Link } from 'react-router-dom'; // Assuming react-router-dom is used for routing
+// import './Home.css'; // Optional: for styling
 
 const calculators = [
-  // --- Conversion
+  // Your provided calculators array
   {
     title: "Capacitance Conversion",
     description: "Convert capacitance values between pF, nF, μF, and F.",
@@ -99,8 +102,6 @@ const calculators = [
     icon: "🧮",
     category: "conversion"
   },
-
-  // --- Calculation
   {
     title: "Ohm's Law Calculator",
     description: "Calculate voltage, current, resistance, or power.",
@@ -220,8 +221,6 @@ const calculators = [
     icon: "🧮",
     category: "calculation"
   },
-
-  // --- Identification
   {
     title: "Electrical Plug Reference",
     description: "Reference for plug types used worldwide.",
@@ -244,3 +243,39 @@ const calculators = [
     category: "identification"
   }
 ];
+
+const Home = () => {
+  // Group calculators by category
+  const groupedCalculators = calculators.reduce((acc, calc) => {
+    acc[calc.category] = acc[calc.category] || [];
+    acc[calc.category].push(calc);
+    return acc;
+  }, {});
+
+  return (
+    <div className="home">
+      <h1>Calculators</h1>
+      {Object.keys(groupedCalculators).map((category) => (
+        <div key={category} className="category-section">
+          <h2>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+          <div className="calculator-list">
+            {groupedCalculators[category].map((calc) => (
+              <Link
+                key={calc.title}
+                to={calc.to}
+                className="calculator-card"
+              >
+                <span className="calculator-icon">{calc.icon}</span>
+                <h3>{calc.title}</h3>
+                <p>{calc.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// Export as default
+export default Home;

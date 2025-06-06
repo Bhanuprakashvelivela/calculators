@@ -57,7 +57,7 @@ function App() {
           <Route path="/" element={<Home tab={tab} searchTerm={searchTerm} />} />
 
           {/* Conversion */}
-          {/* <Route path="/capacitance-conversion" element={<CapacitanceConversion />} />
+          <Route path="/capacitance-conversion" element={<CapacitanceConversion />} />
           <Route path="/dbm-to-watts-conversion" element={<DbmToWattsConversion />} />
           <Route path="/decimal-fraction-conversion" element={<DecimalFractionConversion />} />
           <Route path="/energy-conversion" element={<EnergyConversion />} />
@@ -70,10 +70,10 @@ function App() {
           <Route path="/temperature-conversion-calculator" element={<TemperatureConversionCalculator />} />
           <Route path="/volume-conversion" element={<VolumeConversion />} />
           <Route path="/weight-conversion" element={<WeightConversion />} />
-          <Route path="/wire-size-conversion" element={<WireSizeConversion />} /> */}
+          <Route path="/wire-size-conversion" element={<WireSizeConversion />} />
 
           {/* Calculation */}
-          {/* <Route path="/timer-555-calculator" element={<Timer555Calculator />} />
+          <Route path="/timer-555-calculator" element={<Timer555Calculator />} />
           <Route path="/attenuator-calculator" element={<AttenuatorCalculator />} />
           <Route path="/battery-life-calculator" element={<BatteryLifeCalculator />} />
           <Route path="/capacitor-discharge-calculator" element={<CapacitorDischargeCalculator />} />
@@ -88,12 +88,12 @@ function App() {
           <Route path="/three-phase-calculator" element={<ThreePhaseCalculator />} />
           <Route path="/time-constant-calculator" element={<TimeConstantCalculator />} />
           <Route path="/trace-impedance-calculator" element={<TraceImpedanceCalculator />} />
-          <Route path="/voltage-divider-calculator" element={<VoltageDividerCalculator />} /> */}
+          <Route path="/voltage-divider-calculator" element={<VoltageDividerCalculator />} />
 
           {/* Identification */}
-          {/* <Route path="/electrical-plug-reference" element={<ElectricalPlugReference />} />
+          <Route path="/electrical-plug-reference" element={<ElectricalPlugReference />} />
           <Route path="/resistor-color-code-calculator" element={<ResistorColorCodeCalculator />} />
-          <Route path="/smd-resistor-code-calculator" element={<SMDResistorCodeCalculator />} /> */}
+          <Route path="/smd-resistor-code-calculator" element={<SMDResistorCodeCalculator />} />
           <Route path="/smd-capacitor-code-calculator" element={<SMDCapacitorCodeCalculator />} />
         </Routes>
       </div>

@@ -8,10 +8,10 @@ function FrequencyToWavelength() {
     let f = parseFloat(frequency);
     if (isNaN(f) || f <= 0) return setWavelength(null);
     // Convert input to Hz
-    if (unit === "Hz") f = f;
-    else if (unit === "kHz") f *= 1e3;
+    if (unit === "kHz") f *= 1e3;
     else if (unit === "MHz") f *= 1e6;
     else if (unit === "GHz") f *= 1e9;
+    // else unit === "Hz", do nothing
     const wl = 299792458 / f;
     setWavelength(wl);
   };
