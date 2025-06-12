@@ -11,6 +11,7 @@ const tabs = [
 function DashboardHeader({ tab, onTabChange, searchTerm, setSearchTerm, onSearch }) {
   return (
     <div className="dashboard-header">
+      <div className="dashboard-brand">Sunvair Group - Mingo - AAIC</div>
       <div className="dashboard-tabs">
         {tabs.map(t => (
           <div
