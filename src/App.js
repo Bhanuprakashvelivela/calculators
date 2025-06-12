@@ -38,6 +38,7 @@ import ElectricalPlugReference from "./calculators/ElectricalPlugReference";
 import ResistorColorCodeCalculator from "./calculators/ResistorColorCodeCalculator";
 import SMDResistorCodeCalculator from "./calculators/SMDResistorCodeCalculator";
 import SMDCapacitorCodeCalculator from "./calculators/SMDCapacitorCodeCalculator";
+import LCResonantFrequencyCalculator from "./calculators/LCResonantFrequencyCalculator";
 
 function App() {
   const [tab, setTab] = useState("all");
@@ -89,6 +90,7 @@ function App() {
           <Route path="/time-constant-calculator" element={<TimeConstantCalculator />} />
           <Route path="/trace-impedance-calculator" element={<TraceImpedanceCalculator />} />
           <Route path="/voltage-divider-calculator" element={<VoltageDividerCalculator />} />
+          <Route path="/lc-resonant-frequency-calculator" element={<LCResonantFrequencyCalculator />} />
 
           {/* Identification */}
           <Route path="/electrical-plug-reference" element={<ElectricalPlugReference />} />
