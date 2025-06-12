@@ -201,6 +201,13 @@ const calculators = [
     category: "calculation"
   },
   {
+    title: "LC Resonant Frequency Calculator",
+    description: "Find the resonant frequency for an LC circuit.",
+    to: "/lc-resonant-frequency-calculator",
+    icon: "🧮",
+    category: "calculation"
+  },
+  {
     title: "555 Timer Calculator",
     description: "Calculate frequency/duty cycle for 555 circuits.",
     to: "/timer-555-calculator",
