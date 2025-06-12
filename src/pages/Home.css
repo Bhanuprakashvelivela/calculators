@@ -1,0 +1,32 @@
+.home {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+.category-section {
+    margin-bottom: 32px;
+}
+
+.category-section h2 {
+    color: #003366;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.calculator-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.calculator-card {
+    text-decoration: none;
+}
+
+.calculator-icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 8px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Assuming react-router-dom is used for routing
-// import './Home.css'; // Optional: for styling
+import './Home.css';
 
 const calculators = [
   // Your provided calculators array
